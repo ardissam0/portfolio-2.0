@@ -1,13 +1,11 @@
+import React from 'react';
 import './styles/App.css';
-import {Route} from "react-router-dom";
-import Welcome from "./components/Welcome";
+import Welcome from "./pages/Welcome";
 
 function App() {
   return (
     <div className="App">
-      <Route path="/">
-        <Welcome />
-      </Route>
+          <Welcome />
     </div>
   );
 }
