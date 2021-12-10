@@ -1,3 +1,70 @@
-.App {
-  text-align: center;
+/* 
+   Filename: App.css
+   Author: Samuel Ardis
+   Date: 12/10/2021
+   Portfolio 2.0
+ */
+
+ /* reset style */
+
+ html {
+  box-sizing: border-box;
 }
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ a, article, body, div, figcaption, figure, footer, header, h1, 
+ h2, h3, img, li, nav, p, section, ol, ul, fieldset, form, legend, 
+ input, label, textarea, option, select, dl, dt, dd, table, thead, 
+ tbody, th, td, span, video, audio {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+ul {
+  list-style: none;
+}
+input,
+textarea,
+select,
+button {
+  color: inherit; 
+  font: inherit; 
+  letter-spacing: inherit; 
+}
+button {
+  border-radius: 0; 
+  padding: 0.75em 1em;
+  background-color: transparent;
+}
+embed,
+iframe,
+img,
+object,
+video {
+  display: block;
+  max-width: 100%;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+[hidden] {
+  display: none;
+}
+[hidden] {
+  display: none !important;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* main styles */
+
+
