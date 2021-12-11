@@ -16,7 +16,9 @@ export const Router = ()=> {
                 <Route path="/Contact" element={<Contact />} />
             </Routes>
             <footer>
-              &copy;{(new Date().getFullYear())} <a href="https://samardis.com/">samardis.com</a>
+                <div> 
+                    &copy;{(new Date().getFullYear())} <a href="https://samardis.com/">samardis.com</a>
+                </div>
             </footer>
         </div>
     )

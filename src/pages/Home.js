@@ -11,29 +11,32 @@ const Home = props => {
 
     return (
         <div className="content">
-            <div className="social-links">
+            <div className="social-background">
+                <div className="social-links">
 
-                {/* LinkedIn */}
-                <a href="https://www.linkedin.com/in/samuel-ardis/" rel="noopener noreferrer" target="_blank">
-                    <FaLinkedin />
-                </a>
+                    {/* LinkedIn */}
+                    <a href="https://www.linkedin.com/in/samuel-ardis/" rel="noopener noreferrer" target="_blank">
+                        <FaLinkedin />
+                    </a>
 
-                {/* Github */}
-                <a href="https://github.com/ardissam0" rel="noopener noreferrer" target="_blank">
-                    <FaGithubSquare />
-                </a>
+                    {/* Github */}
+                    <a href="https://github.com/ardissam0" rel="noopener noreferrer" target="_blank">
+                        <FaGithubSquare />
+                    </a>
 
-                {/* Twitter */}
-                <a href="https://twitter.com/samuel_ardis" rel="noopener noreferrer" target="_blank">
-                    <FaTwitterSquare />
-                </a>
+                    {/* Twitter */}
+                    <a href="https://twitter.com/samuel_ardis" rel="noopener noreferrer" target="_blank">
+                        <FaTwitterSquare />
+                    </a>
 
-                {/* Instagram */}
-                <a href="https://www.instagram.com/samuel.d.ardis/?hl=en" rel="noopener noreferrer" target="_blank">
-                    <FaInstagramSquare />
-                </a>
+                    {/* Instagram */}
+                    <a href="https://www.instagram.com/samuel.d.ardis/?hl=en" rel="noopener noreferrer" target="_blank">
+                        <FaInstagramSquare />
+                    </a>
 
+                </div>
             </div>
+            <hr/>
             <h1>Projects</h1>
             <div className="projects">
                 {/* project 0 */}
