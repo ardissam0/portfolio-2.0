@@ -6,8 +6,18 @@
  */
 
 /* Notes:
-  - Make chrome picture different and change name on tab
+  -
 */
+
+/* media / screen sizing */
+  /* --iphoneSE: 325px;
+  --phone: 400px;
+  --smallTablet: 520px;
+  --mediumTablet: 700px;
+  --tablet: 825px;
+  --smallScreen: 1040px;
+  --bigScreen: 1150px;
+  --hugeScreen: 1270px; */
 
  /* reset style */
  html {
@@ -68,29 +78,73 @@ a {
   color: black;
 }
 
-/* media / screen sizing */
-
 /* variable styles*/
 :root {
-  --clr-background: #F8F8FF;
+  --clr-background: #d9d9d9;
   --clr-font: #000000;
-  --clr-primary: #778DA9;
-  --clr-secondary: #778DA9;
+  --clr-primary: #4484ce;
+  --clr-secondary: #f19f4d;
+  --clr-pop: #FBCE00;
   /* sizing */
   --font-main: 1.2em;
   --font-large: 1.5em;
   --font-icon: 3.5em;
   /* effects */
   --transition: all 0.3s ease;
-  /* screen sizes */
-  --iphoneSE: 325px;
-  --phone: 400px;
-  --smallTablet: 520px;
-  --mediumTablet: 700px;
-  --tablet: 825px;
-  --smallScreen: 1040px;
-  --bigScreen: 1150px;
-  --hugeScreen: 1270px;
+}
+
+/* dark mode styles */
+.dark-mode {
+  --clr-background: #000000;
+  --clr-font: #d9d9d9;
+}
+.dark-mode__container {
+  position: absolute;
+  display: flex;
+  margin: 0 auto;
+  top: 75px;
+  right: 40px;
+}
+.dark-mode__container .light__symbol{
+  margin: 4px 3.5px 0 3px;
+  color: var(--clr-pop);
+}
+.dark-mode__container .dark__symbol{
+  margin: 5.5px 3.5px 0 3.5px;
+  color: var(--clr-secondary);
+}
+.dark-mode__toggle {
+  margin: 2px;
+  background: transparent;
+  border-radius: 50px;
+  border: 3px solid var(--clr-font);
+  height: 27px;
+  position: relative;
+  width: 50px;
+}
+.toggle {
+  background: var(--clr-font);
+  border-radius: 100px;
+  height: 17.5px;
+  width: 22px;
+  left: 2.5px;
+  margin-top: 1.4px;
+  position: absolute;
+  transition: var(--transition);
+}
+.toggle:hover {
+  cursor: pointer;
+}
+.toggled {
+  left: 19px;
+}
+
+/* dark mode responsive styles */
+@media(max-width: 600px) {
+  .dark-mode__container {
+    justify-content: center;
+    margin-top: 20px;
+  }
 }
 
 /* main styles */
@@ -139,7 +193,6 @@ img {
 }
 .nav ul li {
   background-color: var(--clr-primary);
-  color: var(--clr-font);
   font-weight: bold;
   margin: 0 10px;
   padding: 15px;
@@ -149,37 +202,46 @@ img {
   transition: var(--transition);
 }
 .nav ul li:hover {
-  border-bottom: 5px solid var(--clr-background);
+  border-bottom: 5px solid var(--clr-pop);
+}
+.nav ul li a {
   color: var(--clr-font);
 }
 
 /* social links */
 .social-background {
-  background-color:var(--clr-font);
+  background-color:var(--clr-secondary);
   margin: 0;
   padding: 0;
 }
 .social-links {
-  background-color:var(--clr-font);
-  width: 70%;
+  background-color:var(--clr-secondary);
+  width: 50%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: space-around;
+  justify-content: space-evenly;
 }
 .social-links a {
-  color: var(--clr-primary);
-  margin: 10px auto;
+  color: var(--clr-font);
+  margin: 20px auto 10px auto;
   font-size: var(--font-icon);
 }
 .social-links a:hover {
-  color: var(--clr-background);
+  color: var(--clr-primary);
 }
 hr {
   border: 3px solid var(--clr-primary);
   background-color: var(--clr-primary);
   margin: 0 0 20px 0;
   padding: 0;
+}
+
+/* social links responsive styles */
+@media (max-width: 1040px) {
+  .social-links {
+    width: 70%;
+  }
 }
 
 /* project styles */
@@ -192,7 +254,7 @@ hr {
 }
 .project {
   background-color: var(--clr-primary);
-  width: 300px;
+  width: 325px;
   height: 450px;
   margin: 20px;
   padding: 20px 30px;
@@ -202,23 +264,34 @@ hr {
 .project-img img {
   position: absolute;
   margin: 0 auto;
-  width: 80%;
-  height: 150px;
+  right: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 .project-name {
+  color: var(--clr-font);
   position: absolute;
-  width: 80%;
-  bottom: 245px;
+  background-color: var(--clr-secondary);
+  left: 0;
+  height: 40px;
+  width: 100%;
+  bottom: 270px;
+}
+.project-name h3 {
+  margin-top: 8px;
 }
 .project-description {
+  color: var(--clr-font);
   overflow-y: scroll;
   position: absolute;
   text-align: left;
   border: 2px solid var(--clr-font);
+  right: 15px;
   border-radius: 5px;
   padding: 5px;
-  width: 80%;
-  height: 170px;
+  width: 90%;
+  height: 190px;
   bottom: 65px;
 }
 .project-description p:last-child {
@@ -228,17 +301,23 @@ hr {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  width: 80%;
+  width: 90%;
+  right: 15px;
   bottom: 25px;
 }
 .project-links a {
-  background-color: var(--clr-font);
-  color: var(--clr-background);
+  background-color: var(--clr-background);
+  color: var(--clr-font);
   font-weight: bold;
   width: 90%;
   margin: -10px 10px;
   border-radius: 5px;
   padding: 8px;
+}
+.project-links a:hover {
+  transition: var(--transition);
+  background-color: var(--clr-font);
+  color: var(--clr-background);
 }
 
 /* about page styles */
@@ -246,6 +325,7 @@ hr {
   align-items: center;
 }
 .about-content h3 {
+  color: var(--clr-font);
   margin: 10px auto;
 }
 .about-name {
@@ -284,6 +364,8 @@ form {
   padding: 20px 10px;
 }
 form input, textarea {
+  color: var(--clr-font);
+  background-color: var(--clr-background);
   margin: 10px 0;
   padding: 5px;
   font-weight: normal;
