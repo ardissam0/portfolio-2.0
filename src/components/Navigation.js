@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import avatarPic from "../img/Avatar-profile-new.png";
 import useDarkMode from "../hooks/useDarkMode";
 
 const Navigation = () => {
@@ -12,13 +11,8 @@ const Navigation = () => {
 
     return (
         <div className="nav">
-            <div className="avatar-img">
-                    <img width="150px"
-                    src= {avatarPic}
-                    alt="Samuel Ardis"/>
-                </div>
             <div>
-                <h3>Sam <br/> Ardis</h3>
+                <h3>Sam Ardis</h3>
             </div>
             <div>
                 <ul>
