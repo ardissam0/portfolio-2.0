@@ -143,7 +143,7 @@ a {
 @media(max-width: 800px) {
   .dark-mode__container {
     top: 260px;
-    right: 150px;
+    right: 50px;
   }
 }
 
@@ -219,7 +219,7 @@ h1, h2 {
   }
   .nav h3 {
     top: 255px;
-    left: 150px;
+    left: 50px;
   }
   .nav .avatar-img img {
     left: 15px;
