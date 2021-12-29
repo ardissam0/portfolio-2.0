@@ -44,7 +44,7 @@ export const Router = ()=> {
             </Routes>
             <footer>
                 <div> 
-                    &copy;{(new Date().getFullYear())} <a href="https://samardis.com/">samardis.com</a>
+                    Copyright &copy; {(new Date().getFullYear())} <a href="https://samardis.com/">samardis.com</a>
                 </div>
             </footer>
         </div>
