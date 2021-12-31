@@ -2,7 +2,7 @@ import React from 'react';
 import CovidTrackAppImg from '../img/new-covid-app-img.JPG';
 import AnywhereFitnessAppImg from '../img/new-anywhere-fitness-app-img.JPG';
 import CPGM132FinalImg from "../img/final-project-img.JPG";
-import RecipeAppImg from '../img/new-recipe-app-img.JPG';
+import RecipeAppImg from '../img/new-recipe-app-img2.JPG';
 import AmazonAppImg from '../img/new-amazon-img.JPG';
 import NasaImg from '../img/new-nasa-app-img.JPG';
 
