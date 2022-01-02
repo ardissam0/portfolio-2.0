@@ -25,7 +25,7 @@ const Home = props => {
                     </div>
                     <div className="project-description">
                         <p>Built this final project for one of my classes at MCC. It is an imaginary company that sells health-related products online. You can add items to your cart, "buy it", learn more about out the products, calculate your BMI, and more. It is also fully responsive for tablet and mobile viewing.</p>
-                        <p>STACK: HTML, CSS, and vanilla JavaScript.</p>
+                        <p>STACK: HTML, CSS, vanilla JavaScript, and firebase.</p>
                     </div>
                     <div className="project-links">
                         <a href="https://ardissam0.github.io/longevity-clinic-final-project/" rel="noopener noreferrer" target="_blank">Deployed</a>
@@ -45,7 +45,7 @@ const Home = props => {
                     </div>
                     <div className="project-description">
                         <p> Built an authenticated mobile-responsive COVID-19 tracker app that pulls from an API and shows you the total and new worldwide cases, as well as individual country and state data (cases, recovered, deaths, population, etc). There is a table, map, and graph that you can use to get a good visual of the data. I also implemented a weather tab so you can see the weather of any place in the world as well as a darkmode toggle for better viewing.</p>
-                        <p>STACK: React, CSS, and Firebase.</p>
+                        <p>STACK: React, CSS, API, and Firebase.</p>
                     </div>
                     <div className="project-links">
                         <a href="https://covid-19-tracker-app-d7699.web.app/" rel="noopener noreferrer" target="_blank">Deployed</a>
@@ -65,7 +65,7 @@ const Home = props => {
                     </div>
                     <div className="project-description">
                         <p>Built an authenticated mobile-responsive Recipe and Nutrition App that pulls recipes and nutrtional data from an API. You can search for a recipe and see how to make it as well as the nutritional content such as: percentage of your daily value, total quantity of nutrients, and the type of diet it falls under.</p>
-                        <p>STACK: React, CSS, and Firebase.</p>
+                        <p>STACK: React, CSS, API, and Firebase.</p>
                     </div>
                     <div className="project-links">
                         <a href="https://health-app-30d89.web.app/" rel="noopener noreferrer" target="_blank">Deployed</a>
@@ -125,7 +125,7 @@ const Home = props => {
                     </div>
                     <div className="project-description">
                         <p> Built the backend and deployed the API for a week long group project I did at Bloom Institute of Technology called Anywhere Fitness. This app allows you to see what type of classes instrutors are hosting online and when you can attend them. You can login as a client or an instructor, and perform all CRUD operations. I will include the deployed frontend where you can try out the crud operations like registering, logging in, etc. </p>
-                        <p>STACK: NodeJS and ExpressJS.</p>
+                        <p>STACK: Node.js and Express.js.</p>
                     </div>
                     <div className="project-links">
                         <a href="https://fitness-anywhere-bw.netlify.app/" rel="noopener noreferrer" target="_blank">Deployed</a>
