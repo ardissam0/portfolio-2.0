@@ -10,7 +10,7 @@ const Home = props => {
 
     return (
         <div className="content">
-            <h1>Projects</h1>
+            <h1 className="projects-name">Projects</h1>
             <div className="projects">
                 {/* project 0 */}
                 <div className="project">

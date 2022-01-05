@@ -36,7 +36,6 @@ export const Router = ()=> {
 
                 </div>
             </div>
-            <hr/>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/About" element={<About />} />

@@ -80,11 +80,13 @@ a {
 
 /* variable styles*/
 :root {
-  --clr-background: #EBEBEB;
-  --clr-font: #1d2731;
-  --clr-primary: #0B3C5D;
-  --clr-secondary: #328cc1;
-  --clr-pop: #d9b310;
+  --clr-background: #E8E9EB;
+  --clr-background-2: #E8E9EB;
+  --clr-font: #000;
+  --clr-primary: #313638;
+  --clr-secondary: #E0DFD5;
+  --clr-pop: #E4B363;
+  --clr-fire: #EF6461;
   /* sizing */
   --font-main: 1.2em;
   --font-large: 1.5em;
@@ -95,8 +97,9 @@ a {
 
 /* dark mode styles */
 .dark-mode {
-  --clr-background: #1d2731;
-  --clr-font: #EBEBEB;
+  --clr-background: #313638;
+  --clr-background-2: #000;
+  --clr-font: #E8E9EB;
 }
 .dark-mode__container {
   position: absolute;
@@ -111,7 +114,7 @@ a {
 }
 .dark-mode__container .dark__symbol{
   margin: 5.5px 3.5px 0 3.5px;
-  color: var(--clr-secondary);
+  color: #3686A0;
 }
 .dark-mode__toggle {
   margin: 2px;
@@ -162,7 +165,7 @@ img {
   margin: 20px auto;
 }
 h1, h2 {
-  color: var(--clr-secondary);
+  color: var(--clr-font);
 }
 
 /* navigation */
@@ -173,13 +176,6 @@ h1, h2 {
   display: flex;
   justify-content: space-evenly;
   position: relative;
-}
-.nav .avatar-img img {
-  position: absolute;
-  bottom: 0px;
-  left: 35px;
-  padding: 0;
-  margin: 0;
 }
 .nav h3 {
   position: absolute;
@@ -209,26 +205,23 @@ h1, h2 {
   border-bottom: 5px solid var(--clr-pop);
 }
 .nav ul li a {
-  color: #EBEBEB;
+  color: #E8E9EB;
 }
 
 /* navigation responsive styles */
 @media (max-width: 800px) {
   .nav {
-    padding: 150px 0;
+    padding: 164px 0;
   }
   .nav h3 {
     top: 255px;
     left: 50px;
   }
-  .nav .avatar-img img {
-    left: 15px;
-  }
   .nav ul{
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     padding: 0;
-    left: 0;
+    left: 5%;
     margin: 0 auto;
     top: 15px;
   }
@@ -237,10 +230,11 @@ h1, h2 {
     left: 0;
     right: 0;
     margin: 8px 0;
-    background-color: var(--clr-font);
+    border-radius: 10px;
+    background-color: var(--clr-background-2);
   }
   .nav ul li a {
-    color: var(--clr-background);
+    color: var(--clr-font);
     padding-left: 42%;
     padding-right: 38%;
   }
@@ -248,31 +242,26 @@ h1, h2 {
 
 /* social links */
 .social-background {
-  background-color:var(--clr-secondary);
+  background-color:var(--clr-fire);
   margin: 0;
   padding: 0;
 }
 .social-links {
-  background-color:var(--clr-secondary);
+  background-color:var(--clr-fire);
   width: 50%;
   margin: 0 auto;
+  margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .social-links a {
-  color: #EBEBEB;
+  color: var(--clr-background);
   margin: 20px auto 10px auto;
   font-size: var(--font-icon);
 }
 .social-links a:hover {
-  color: var(--clr-primary);
-}
-hr {
-  border: 3px solid var(--clr-primary);
-  background-color: var(--clr-primary);
-  margin: 0 0 20px 0;
-  padding: 0;
+  color: var(--clr-font);
 }
 
 /* social links responsive styles */
@@ -288,6 +277,10 @@ hr {
 }
 
 /* project styles */
+
+.projects-name {
+  margin-bottom: 25px;
+}
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -296,10 +289,10 @@ hr {
   margin: 0 auto;
 }
 .project {
-  background-color: var(--clr-primary);
+  background-color: var(--clr-font);
   width: 325px;
   height: 450px;
-  margin: 20px;
+  margin: 30px;
   padding: 20px 30px;
   position: relative;
   border-radius: 10px;
@@ -313,9 +306,9 @@ hr {
   width: 100%;
 }
 .project-name {
-  color: #EBEBEB;
+  color: var(--clr-font);
   position: absolute;
-  background-color: var(--clr-secondary);
+  background-color: var(--clr-fire);
   left: 0;
   height: 40px;
   width: 100%;
@@ -325,11 +318,11 @@ hr {
   margin-top: 8px;
 }
 .project-description {
-  color: #EBEBEB;
+  color: var(--clr-background);
   overflow-y: scroll;
   position: absolute;
   text-align: left;
-  border: 2px solid var(--clr-font);
+  border: 2px solid var(--clr-background);
   right: 15px;
   border-radius: 5px;
   padding: 5px;
@@ -349,8 +342,8 @@ hr {
   bottom: 25px;
 }
 .project-links a {
-  background-color: var(--clr-secondary);
-  color: #EBEBEB;
+  background-color: var(--clr-background);
+  color: var(--clr-font);
   font-weight: bold;
   width: 90%;
   margin: -10px 10px;
@@ -360,7 +353,6 @@ hr {
 .project-links a:hover {
   transition: var(--transition);
   background-color: var(--clr-pop);
-  color: var(--clr-secondary);
 }
 
 /* about page styles */
@@ -368,11 +360,11 @@ hr {
   align-items: center;
 }
 .about-content h3 {
-  color: #EBEBEB;
+  color: var(--clr-font);
   margin: 10px auto;
 }
 .about-name {
-  margin: 20px auto;
+  margin: 30px auto;
 }
 .about-box {
   color: var(--clr-font);
@@ -389,7 +381,7 @@ hr {
   margin-top: 10px;
 }
 .about-box h3 {
-  background-color: var(--clr-primary);
+  background-color: var(--clr-pop);
   padding: 5px;
 }
 .about-title h2 {
@@ -402,7 +394,7 @@ hr {
   margin: 0;
 }
 .btn-modal {
-  background-color: var(--clr-secondary);
+  background-color: var(--clr-fire);
   border: none;
   margin-top: 5px;
   border-radius: 5px;
@@ -450,7 +442,7 @@ hr {
   cursor: pointer;
 }
 .modal-close:hover {
-  color: #C92C4B;
+  color: var(--clr-fire);
 }
 .modal-body {
   padding: 1.25rem 1.5rem;
@@ -464,18 +456,18 @@ hr {
 }
 form {
   width: 400px;
-  margin: 25px auto 100px auto;
+  margin: 35px auto 100px auto;
   display: flex;
   flex-direction: column;
   text-align: left;
   font-weight: bold;
-  color: var(--clr-font);
-  background-color: var(--clr-secondary);
+  color: var(--clr-background);
+  background-color: var(--clr-font);
   border-radius: 10px;
   padding: 20px 10px;
 }
 form label {
-  color: #EBEBEB;
+  color: var(--clr-background);
 }
 form input, textarea {
   color: var(--clr-font);
@@ -493,7 +485,7 @@ form textarea {
 form input[type=submit] {
   padding: 10px;
   font-weight: bold;
-  color: var(--clr-secondary);
+  color: var(--clr-font);
   background-color: var(--clr-background);
   cursor: pointer;
   transition: var(--transition);
@@ -508,14 +500,14 @@ form input[type=submit]:hover {
 @media (max-width: 800px) {
   form {
     width: 85%;
-    margin: 0 auto;
+    margin: 35px auto;
   }
 }
 
 /* footer */
 footer {
-  background-color: var(--clr-primary);
-  color: #EBEBEB;
+  background-color: #000;
+  color: #E8E9EB;
   width: 100%;
   padding: 50px 0;
   bottom: 0;
@@ -525,6 +517,6 @@ footer div {
   margin: 0 auto;
 }
 footer a {
-  color: #EBEBEB;
+  color: #E8E9EB;
   margin-left: 10px;
 }

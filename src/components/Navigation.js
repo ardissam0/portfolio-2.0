@@ -31,7 +31,6 @@ const Navigation = () => {
                      </div>
                 <span className="dark__symbol">☾</span>
             </div>
-        <hr />
         </div>
     )
 }
