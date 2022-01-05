@@ -11,6 +11,11 @@ export const Router = ()=> {
             <div>
                 <Navigation />
             </div>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/About" element={<About />} />
+                <Route path="/Contact" element={<Contact />} />
+            </Routes>
             <div className="social-background">
                 <div className="social-links">
 
@@ -36,11 +41,6 @@ export const Router = ()=> {
 
                 </div>
             </div>
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/About" element={<About />} />
-                <Route path="/Contact" element={<Contact />} />
-            </Routes>
             <footer>
                 <div> 
                     Copyright &copy; {(new Date().getFullYear())} <a href="https://samardis.com/">samardis.com</a>

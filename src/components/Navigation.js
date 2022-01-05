@@ -16,9 +16,9 @@ const Navigation = () => {
             </div>
             <div>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/About">About</Link></li>
-                    <li><Link to="/Contact">Contact</Link></li>
+                    <Link to="/"><li>Home</li></Link>
+                    <Link to="/About"><li>About</li></Link>
+                    <Link to="/Contact"><li>Contact</li></Link>
                 </ul>
             </div>
             <div className="dark-mode__container">
