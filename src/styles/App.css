@@ -156,7 +156,7 @@ a {
   margin: 0 auto;
 }
 .content {
-  font-family: 'Cardo', serif;
+  font-family: 'Source Sans Pro', sans-serif;
   min-height: 75vh;
   text-align: center;
   margin: 0 auto 20px auto;
@@ -518,6 +518,8 @@ form input[type=submit]:hover {
 
 /* footer */
 footer {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
   background-color: #000;
   color: #E8E9EB;
   width: 100%;
