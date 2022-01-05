@@ -156,6 +156,7 @@ a {
   margin: 0 auto;
 }
 .content {
+  font-family: 'Cardo', serif;
   min-height: 75vh;
   text-align: center;
   margin: 0 auto 20px auto;
@@ -164,12 +165,18 @@ img {
   display: block;
   margin: 20px auto;
 }
-h1, h2 {
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   color: var(--clr-font);
 }
 
 /* navigation */
 .nav {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   background-color: var(--clr-primary);
   width: 100%;
   padding: 60px 0;
@@ -333,6 +340,9 @@ h1, h2 {
   margin-top: 10px;
 }
 .project-links {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -482,6 +492,9 @@ form textarea {
   height: 125px;
 }
 form input[type=submit] {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   padding: 10px;
   font-weight: bold;
   color: var(--clr-font);
