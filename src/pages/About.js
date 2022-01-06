@@ -6,9 +6,6 @@ const About = props => {
     const [show, setShow] = useState(false);
     return (
         <div className="content about-content">
-            <div className="about-name">
-                    <h1>About Me</h1>
-            </div>
             <div className="about-box">
                 <div className="about-title">
                     <h2>Web Developer</h2>

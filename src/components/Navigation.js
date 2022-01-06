@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import useDarkMode from "../hooks/useDarkMode";
+// import nameLogoImg from "../img/logo-name.png";
 
 const Navigation = () => {
     const [darkMode, setDarkMode] = useDarkMode(false);
@@ -12,7 +13,15 @@ const Navigation = () => {
     return (
         <div className="nav">
             <div>
-                <h3>Sam Ardis</h3>
+            {/* <Link to="/">
+            <img 
+                width="165px"
+                src={nameLogoImg}
+                alt="My dog"
+                className="logo-img-name"/></Link> */}
+            <Link to="/">
+            <h3>Sam Ardis</h3>
+            </Link>
             </div>
             <div>
                 <ul>

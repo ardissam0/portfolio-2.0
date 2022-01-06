@@ -10,7 +10,6 @@ const Home = props => {
 
     return (
         <div className="content">
-            <h1 className="projects-name">Projects</h1>
             <div className="projects">
                 {/* project 0 */}
                 <div className="project">
@@ -24,7 +23,7 @@ const Home = props => {
                         <h3>CPGM 132 Final</h3>
                     </div>
                     <div className="project-description">
-                        <p>Built this mobile-friednly final project for one of my classes at MCC. It is a company that sells health-related products online. You can add items to your cart, "buy it", learn more about the products, calculate your BMI, and more.</p>
+                        <p>Built this mobile-friendly final project for one of my classes at MCC. It is a company that sells health-related products online. You can add items to your cart, "buy it", learn more about the products, calculate your BMI, and more.</p>
                         <p>STACK: HTML, CSS, vanilla JavaScript, and firebase.</p>
                     </div>
                     <div className="project-links">
@@ -104,10 +103,10 @@ const Home = props => {
                         />
                     </div>
                     <div className="project-name">
-                        <h3>NASA Photo of The Day</h3>
+                        <h3>NASA Photo App</h3>
                     </div>
                     <div className="project-description">
-                        <p>Built a photo of the day app that uses NASA's API and updates daily. I also added a simple animation and made it mobile friendly.</p>
+                        <p>Built a photo of the day web app that uses NASA's API and updates daily. I also added a simple animation and made it mobile friendly.</p>
                         <p>STACK: React, API, and CSS</p>
                     </div>
                     <div className="project-links">
@@ -124,7 +123,7 @@ const Home = props => {
                         />
                     </div>
                     <div className="project-name">
-                        <h3>Anywhere Fitness Backend</h3>
+                        <h3>Backend Project</h3>
                     </div>
                     <div className="project-description">
                         <p> Built the backend and deployed the API for a week long group project I did at Bloom Institute of Technology called Anywhere Fitness. This app allows you to see what type of classes instrutors are hosting online and when you can attend them. You can login as a client or an instructor, and perform all CRUD operations. I will include the deployed frontend where you can try out the crud operations like registering, logging in, etc. </p>
