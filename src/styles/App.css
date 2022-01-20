@@ -325,6 +325,7 @@ h1, h2, h3 {
   background-color: var(--clr-background-2);
   display: flex;
   flex-wrap: wrap;
+  padding: 2% 0 2% 0;
   justify-content: space-evenly;
   width: 90%;
   border-radius: 5px;
