@@ -27,7 +27,7 @@ const Home = props => {
                         <p>STACK: HTML, CSS, vanilla JavaScript, and firebase.</p>
                     </div>
                     <div className="project-links">
-                        <a href="https://ardissam0.github.io/longevity-clinic-final-project/" rel="noopener noreferrer" target="_blank">Deployed</a>
+                        <a href="https://ardissam0.github.io/longevity-clinic-final-project/" rel="noopener noreferrer" target="_blank">Website</a>
                         <a href="https://github.com/ardissam0/longevity-clinic-final-project" rel="noopener noreferrer" target="_blank">Github</a>
                     </div>
                 </div>
@@ -48,7 +48,7 @@ const Home = props => {
                         <p>STACK: React, CSS, API, and Firebase.</p>
                     </div>
                     <div className="project-links">
-                        <a href="https://covid-19-tracker-app-d7699.web.app/" rel="noopener noreferrer" target="_blank">Deployed</a>
+                        <a href="https://covid-19-tracker-app-d7699.web.app/" rel="noopener noreferrer" target="_blank">Website</a>
                         <a href="https://github.com/ardissam0/COVID-19_TRACKER-APP" rel="noopener noreferrer" target="_blank">Github</a>
                     </div>
                 </div>
@@ -69,7 +69,7 @@ const Home = props => {
                         <p>STACK: React, CSS, API, and Firebase.</p>
                     </div>
                     <div className="project-links">
-                        <a href="https://health-app-30d89.web.app/" rel="noopener noreferrer" target="_blank">Deployed</a>
+                        <a href="https://health-app-30d89.web.app/" rel="noopener noreferrer" target="_blank">Website</a>
                         <a href="https://github.com/ardissam0/Health-Fitness-App" rel="noopener noreferrer" target="_blank">Github</a>
                     </div>
                 </div>
@@ -90,7 +90,7 @@ const Home = props => {
                         <p>STACK: React, CSS, Stripe API, and Firebase.</p>
                     </div>
                     <div className="project-links">
-                        <a href="https://ecom-store-2021.web.app/" rel="noopener noreferrer" target="_blank">Deployed</a>
+                        <a href="https://ecom-store-2021.web.app/" rel="noopener noreferrer" target="_blank">Website</a>
                         <a href="https://github.com/ardissam0/ecom-store-2021/tree/Sam-Ardis/ecom-store-1" rel="noopener noreferrer" target="_blank">Github</a>
                     </div>
                 </div>
@@ -110,7 +110,7 @@ const Home = props => {
                         <p>STACK: React, API, and CSS</p>
                     </div>
                     <div className="project-links">
-                        <a href="https://nasa-photo-of-the-day-three.vercel.app/" rel="noopener noreferrer" target="_blank">Deployed</a>
+                        <a href="https://nasa-photo-of-the-day-three.vercel.app/" rel="noopener noreferrer" target="_blank">Website</a>
                         <a href="https://github.com/ardissam0/nasa-photo-of-the-day" rel="noopener noreferrer" target="_blank">Github</a>
                     </div>
                 </div>
@@ -126,11 +126,11 @@ const Home = props => {
                         <h3>Backend Project</h3>
                     </div>
                     <div className="project-description">
-                        <p> Built the backend and deployed the API for a week long group project I did at Bloom Institute of Technology called Anywhere Fitness. This app allows you to see what type of classes instrutors are hosting online and when you can attend them. You can login as a client or an instructor, and perform all CRUD operations. I will include the deployed frontend where you can try out the crud operations like registering, logging in, etc. </p>
+                        <p> Built the backend and Website the API for a week long group project I did at Bloom Institute of Technology called Anywhere Fitness. This app allows you to see what type of classes instrutors are hosting online and when you can attend them. You can login as a client or an instructor, and perform all CRUD operations. I will include the Website frontend where you can try out the crud operations like registering, logging in, etc. </p>
                         <p>STACK: Node.js and Express.js.</p>
                     </div>
                     <div className="project-links">
-                        <a href="https://fitness-anywhere-bw.netlify.app/" rel="noopener noreferrer" target="_blank">Deployed</a>
+                        <a href="https://fitness-anywhere-bw.netlify.app/" rel="noopener noreferrer" target="_blank">Website</a>
                         <a href="https://github.com/BW-AnywhereFitness/BE" rel="noopener noreferrer" target="_blank">Github</a>
                     </div>
                 </div>

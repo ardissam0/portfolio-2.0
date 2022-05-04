@@ -43,7 +43,7 @@ export const Router = ()=> {
             </div>
             <footer>
                 <div> 
-                    Copyright &copy; {(new Date().getFullYear())} <a href="https://samardis.com/">samardis.com</a>
+                    &copy; {(new Date().getFullYear())}<a href="https://samardis.com/">samardis.com.</a> All rights reserved.
                 </div>
             </footer>
         </div>

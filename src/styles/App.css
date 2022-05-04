@@ -86,7 +86,7 @@ a {
   --clr-primary: #1B2A41;
   --clr-secondary: #324A5F;
   --clr-glow: #C0D6DF;
-  --clr-pop: #F5AC72;
+  --clr-pop: #D6F49D;
   /* sizing */
   --font-main: 1.2em;
   --font-large: 1.5em;
@@ -204,7 +204,7 @@ h1, h2, h3 {
 }
 .nav h3 {
   position: absolute;
-  color: var(--clr-glow);
+  color: var(--clr-pop);
   line-height: 30px;
   letter-spacing: 3px;
   padding: 10px;
@@ -302,7 +302,7 @@ h1, h2, h3 {
   font-size: var(--font-icon);
 }
 .social-links a:hover {
-  color: var(--clr-secondary);
+  color: var(--clr-pop);
 }
 
 /* social links responsive styles */
@@ -322,7 +322,6 @@ h1, h2, h3 {
   margin-bottom: 25px;
 }
 .projects {
-  background-color: var(--clr-background-2);
   display: flex;
   flex-wrap: wrap;
   padding: 2% 0 2% 0;
@@ -332,8 +331,8 @@ h1, h2, h3 {
   margin: 60px auto 70px auto;
 }
 .project {
-  background-color: var(--clr-background);
-  color: #000;
+  background-color: var(--clr-primary);
+  color: #fff;
   width: 320px;
   height: 480px;
   margin: 30px;
@@ -363,7 +362,7 @@ h1, h2, h3 {
   margin-top: 8px;
 }
 .project-description {
-  color: var(--clr-font);
+  color: #fff;
   overflow-y: auto;
   position: absolute;
   text-align: left;
@@ -396,8 +395,8 @@ h1, h2, h3 {
   bottom: 25px;
 }
 .project-links a {
-  background-color: var(--clr-primary);
-  color: var(--clr-glow);
+  background-color: var(--clr-glow);
+  color: var(--clr-primary);
   letter-spacing: 3px;
   font-weight: bold;
   width: 90%;
@@ -553,6 +552,7 @@ form input[type=submit] {
 }
 form input[type=submit]:hover {
   background-color: var(--clr-pop);
+  color: var(--clr-secondary);
 }
 
 /* contact page responsive styles */
@@ -566,7 +566,6 @@ form input[type=submit]:hover {
 /* footer */
 footer {
   font-family: var(--font-body);
-  text-transform: uppercase;
   background-color: #000;
   color: #E8E9EB;
   width: 100%;
@@ -578,6 +577,6 @@ footer div {
   margin: 0 auto;
 }
 footer a {
-  color: #E8E9EB;
+  color: var(--clr-pop);
   margin-left: 10px;
 }
