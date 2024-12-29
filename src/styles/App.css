@@ -19,8 +19,8 @@
   --bigScreen: 1150px;
   --hugeScreen: 1270px; */
 
- /* reset style */
- html {
+/* reset style */
+html {
   box-sizing: border-box;
 }
 *,
@@ -29,10 +29,10 @@
   box-sizing: inherit;
 }
 
- a, article, body, div, figcaption, figure, footer, header, h1, 
- h2, h3, img, li, nav, p, section, ol, ul, fieldset, form, legend, 
- input, label, textarea, option, select, dl, dt, dd, table, thead, 
- tbody, th, td, span, video, audio {
+a, article, body, div, figcaption, figure, footer, header, h1, 
+h2, h3, img, li, nav, p, section, ol, ul, fieldset, form, legend, 
+input, label, textarea, option, select, dl, dt, dd, table, thead, 
+tbody, th, td, span, video, audio {
     border: 0;
     padding: 0;
     margin: 0;
@@ -78,15 +78,15 @@ a {
   color: #000;
 }
 
-/* variable styles*/
+/* variable styles */
 :root {
-  --clr-background: #DBE9EE;
-  --clr-background-2: #fff;
-  --clr-font: #000;
-  --clr-primary: #1B2A41;
-  --clr-secondary: #324A5F;
-  --clr-glow: #C0D6DF;
-  --clr-pop: #D6F49D;
+  --clr-background: #F4F1ED; /* Neutral */
+  --clr-background-2: #E6DDC4; /* Neutral */
+  --clr-font: #4E3629; /* Copper */
+  --clr-primary: #7D5A50; /* Copper */
+  --clr-secondary: #D7BFAE; /* Neutral/Natural */
+  --clr-glow: #A67B5B; /* Copper/Natural */
+  --clr-pop: #C3A995; /* Neutral/Natural */
   /* sizing */
   --font-main: 1.2em;
   --font-large: 1.5em;
@@ -99,11 +99,11 @@ a {
 
 /* dark mode styles */
 .dark-mode {
-  --clr-background: #000;
-  --clr-background-2: #C0D6DF;
-  --clr-primary: #324A5F;
-  --clr-secondary: #1B2A41;
-  --clr-font: #DBE9EE;
+  --clr-background: #2D2926; /* Dark Neutral */
+  --clr-background-2: #A67B5B; /* Copper/Natural */
+  --clr-primary: #D7BFAE; /* Neutral/Natural */
+  --clr-secondary: #4E3629; /* Copper */
+  --clr-font: #F4F1ED; /* Neutral */
 }
 .dark-mode__container {
   position: absolute;
@@ -118,7 +118,7 @@ a {
 }
 .dark-mode__container .dark__symbol{
   margin: 5.5px 3.5px 0 3.5px;
-  color: #3686A0;
+  color: var(--clr-secondary);
 }
 .dark-mode__toggle {
   margin: 2px;
@@ -211,12 +211,6 @@ h1, h2, h3 {
   font-size: var(--font-large);
   left: 2%;
 }
-/* .nav .logo-img-name {
-  position: absolute;
-  top: -40px;
-  padding: 0;
-  left: 2%;
-} */
 .nav ul {
   position: absolute;
   left: 37%;
@@ -255,11 +249,6 @@ h1, h2, h3 {
     top: 250px;
     left: 30px;
   }
-  /* .nav .logo-img-name {
-    width: 120px;
-    top: 190px;
-    left: 30px;
-  } */
   .nav ul{
     flex-direction: column;
     width: 90%;

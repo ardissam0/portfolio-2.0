@@ -1,43 +1,165 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import DogImg from "../img/theo-img.png";
 import { Modal } from "../components/index";
+import { useEffect } from "react";
 
-const About = props => {
-    const [show, setShow] = useState(false);
-    return (
-        <div className="content about-content">
-            <div className="about-box">
-                <div className="about-title">
-                    <h2>Software Developer</h2>
-                </div>
-                <div className="about-description">
-                    <h3>Location</h3>
-                    <p>I'm from a tiny town in the middle of <span>Michigan</span> but I am open to work anywhere in the <span>United States</span> or <span>remotely</span>.</p>
-                    <h3>About Me</h3>
-                    <p> Being from a small town of about 1500 people, I have always had an intense curiosity about the world. I read a lot of books growing up and constantly throw questions at google. Like most people nowadays, I became fascinated with technology and found myself daydreaming about what the world could look like in 50 years. 
-                        I wondered how I could use technology to make a living. As a result, I am both a logical and creative person who loves solving mathematical problems, learning why and how things work, as well as immersing myself in fictional books, movies, creative writing, design, and video games.</p>
-                        <p>After High School, I went straight to Grand Valley State University to study Biomedical Science but I soon changed to a writing major after contemplating what I was more passionate about. Except, that still didn't give me the career outlook that I wanted. 
-                        So, I dropped out of school in 2018 and reflected on what I really wanted to do with my life. It wasn't until I came across software engineering later that year, that I knew I found the perfect combination of logic and creativity. It was one of those aha moments where I knew what I wanted to do for the rest of my life.</p>
-                        <p>Since then, I have completed a 9-month bootcamp called Bloom Institute of Technology and I am currently one semester away from completing my Associates of Applied Science Degree majoring in Web Development and Programming at Montcalm Community College. 
-                            I believe after a few years of studying, coding, researching, and prepping, I am now ready to jump into the professional workforce. I am excited to connect with other professionals and businesses to see if I would be a good fit for any opportunities you may have.</p> 
-                            <p>Thank you for taking the time to check out my portfolio. If you would like to get in touch, you can contact me through social media or use the contact form on the contact page. I look forward to hearing from you! </p>
-                    <h3>Why I Love To Code</h3>
-                    <p>I enjoy the process. From designing to developing and even debugging, there's no better feeling than seeing your code come alive on the screen or creating working solutions to coding challenges (Whether I solved them alone or researched on stack overflow).</p>
-                    <h3>Hobbies</h3>
-                    <p>When I'm not coding, you can find me gaming, writing books, reading articles about cool stuff, and hanging out with my dog <button className="btn-modal" type="button" onClick={() => setShow(true)}>Theo</button>.</p>
-                    <div>
-                        <Modal show={show} setShow={setShow}>
-                        <img 
-                        width="200px"
-                        src={DogImg}
-                        alt="My dog"
-                        className="about-img-theo"/>
-                        </Modal>
-                </div>
-                </div>
-            </div>
+// TimeTracker component logic integrated directly into About
+const calculateTimeElapsed = (startDate) => {
+  const start = new Date(startDate);
+  const now = new Date();
+
+  let years = now.getFullYear() - start.getFullYear();
+  let months = now.getMonth() - start.getMonth();
+
+  if (months < 0) {
+    years -= 1;
+    months += 12;
+  }
+
+  return { years, months };
+};
+
+const About = (props) => {
+  const [show, setShow] = useState(false);
+
+  // Job Start Date Tracker
+  const startDate = "2023-08-04";
+  const [timeElapsed, setTimeElapsed] = useState({ years: 0, months: 0 });
+
+  useEffect(() => {
+    const updateElapsedTime = () => {
+      const elapsedTime = calculateTimeElapsed(startDate);
+      setTimeElapsed(elapsedTime);
+    };
+
+    updateElapsedTime();
+
+    // Optional: Automatically update every day
+    const timer = setInterval(updateElapsedTime, 1000 * 60 * 60 * 24);
+
+    return () => clearInterval(timer); // Cleanup on unmount
+  }, [startDate]);
+
+  return (
+    <div className="content about-content">
+      <div className="about-box">
+        <div className="about-title">
+          <h3>NAME: Sam Ardis</h3>
+          <h3>ROLE: Associate Business Process Improvement Specialist</h3>
+          <p>
+            Aug 2023 - Present · {timeElapsed.years} year
+            {timeElapsed.years === 1 ? "" : "s"} {timeElapsed.months} month
+            {timeElapsed.months === 1 ? "" : "s"}
+          </p>
+          <p>United States · Remote</p>
+
+          <h3>POSITION: Robotic Process Automation (RPA) Developer</h3>
+          <p>
+            - Help design, develop, test, debug, document, and publish RPA bots
+            independently and as part of a team
+          </p>
+          <p>
+            - Develop various RPA bots to save time and money for Genworth's
+            business operations
+          </p>
+          <p>
+            - For example I developed a bot that takes customer data using
+            Automation Anywhere, Excel, and Alteryx. This bot takes 15 minutes
+            to run each business day and saves the business 2 hours of manual
+            work every business day, which totals to approximately 40 hours per
+            month saved on average.
+          </p>
+          <p>- Use Agile principles to complete features in an efficient manner</p>
         </div>
-    )
-}
+        <div className="about-description">
+          <h3>Location</h3>
+          <p>
+            I'm from a small town in the middle of <span>Michigan</span> but
+            currently working <span>remotely</span>.
+          </p>
+          <h3>About Me</h3>
+          <p>
+            Growing up in a small town of 1,500 residents, I developed a strong
+            curiosity about the broader world. Books and online resources
+            became my gateways to understanding, fueling a fascination with
+            technology and its transformative potential. This combination of
+            logic and creativity shaped my interests in problem-solving,
+            understanding complex systems, and engaging with fiction, creative
+            writing, design, and gaming.
+          </p>
+          <p>
+            After high school, I began my academic journey studying Biomedical
+            Science at Grand Valley State University. However, I soon realized
+            my true passions lay elsewhere. Transitioning to a writing major
+            brought me closer to creativity but still didn’t align with my
+            career aspirations. In 2018, I took a step back to reflect and later
+            discovered software engineering—a discipline that perfectly merged
+            my logical and creative inclinations. This revelation solidified my
+            career direction.
+          </p>
+          <p>
+            Since then, I have completed a 9-month 40 Hour per week immersive
+            coding bootcamp at Bloom Institute of Technology and am finishing my
+            Associate of Applied Science degree in Web Development and
+            Programming at Montcalm Community College. Currently, I work as an
+            Associate Business Process Improvement Specialist, focusing on
+            Robotic Process Automation (RPA) development. With three years of
+            experience in IT and software development, I’ve honed my technical
+            skills and gained valuable industry knowledge.
+          </p>
+          <p>
+            Thank you for taking the time to check out my portfolio. If you
+            would like to get in touch, you can contact me through social media
+            or use the contact form on the contact page. I look forward to
+            hearing from you!
+          </p>
+          <h3>Why I Love To Code</h3>
+          <p>
+            Coding is an iterative and rewarding process that consistently
+            challenges both my technical and creative abilities. From designing
+            initial structures to writing functional code and troubleshooting
+            errors, I find fulfillment in every phase of development.
+          </p>
+          <p>
+            There’s a distinct satisfaction in transforming abstract concepts
+            into tangible, working programs. Whether I’m solving problems
+            independently or collaborating through platforms like Stack
+            Overflow, I am driven by the opportunity to create impactful and
+            efficient solutions that make a difference. The constant cycle of
+            learning and problem-solving is what fuels my enduring passion for
+            coding.
+          </p>
+          <h3>Hobbies</h3>
+          <p>
+            When I’m not working on coding projects, I engage in activities that
+            inspire and relax me. Gaming allows me to explore immersive worlds
+            and unwind, while writing stories provides a creative outlet for my
+            imagination. I also enjoy reading thought-provoking articles on a
+            variety of topics that expand my knowledge and perspective. Most
+            importantly, I cherish spending time with my family and my dog,{" "}
+            <button
+              className="btn-modal"
+              type="button"
+              onClick={() => setShow(true)}
+            >
+              Theo
+            </button>
+            , whose companionship is an endless source of joy.
+          </p>
+          <div>
+            <Modal show={show} setShow={setShow}>
+              <img
+                width="200px"
+                src={DogImg}
+                alt="My dog"
+                className="about-img-theo"
+              />
+            </Modal>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default About;
